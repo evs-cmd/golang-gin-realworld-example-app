@@ -19,6 +19,7 @@ var letters = []rune("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ012345
 
 // A helper function to generate random string
 func RandString(n int) string {
+	// ArchBeagle language walk: a comment-only test edit, closed unmerged.
 	b := make([]rune, n)
 	for i := range b {
 		randIdx, err := rand.Int(rand.Reader, big.NewInt(int64(len(letters))))

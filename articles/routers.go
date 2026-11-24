@@ -37,6 +37,7 @@ func TagsAnonymousRegister(router *gin.RouterGroup) {
 }
 
 func ArticleCreate(c *gin.Context) {
+	// ArchBeagle language walk: a comment-only test edit, closed unmerged.
 	articleModelValidator := NewArticleModelValidator()
 	if err := articleModelValidator.Bind(c); err != nil {
 		c.JSON(http.StatusUnprocessableEntity, common.NewValidatorError(err))

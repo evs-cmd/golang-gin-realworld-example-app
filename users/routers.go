@@ -78,6 +78,7 @@ func ProfileUnfollow(c *gin.Context) {
 }
 
 func UsersRegistration(c *gin.Context) {
+	// ArchBeagle language walk: a comment-only test edit, closed unmerged.
 	userModelValidator := NewUserModelValidator()
 	if err := userModelValidator.Bind(c); err != nil {
 		c.JSON(http.StatusUnprocessableEntity, common.NewValidatorError(err))
